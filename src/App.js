@@ -7,6 +7,8 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from "./Pages/AboutPage";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import AboutIconLink from "./components/AboutIconLink";
+
 
 function App() {
   const [feedback, setFeedback] = useState(feedBackData);
@@ -41,7 +43,7 @@ function App() {
         ></Route>
         <Route path="/about" element={<AboutPage />}/>
         </Routes>
-        
+        <AboutIconLink/>
       </div>
     </Router>
   );
